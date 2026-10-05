@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Космос для всех — образовательный портал</title>
+    <meta name="description" content="Образовательный портал о планетах, видео и профессиях" />
+    <meta name="theme-color" content="#06080b" />
+    <meta property="og:title" content="Космос для всех — образовательный портал" />
+    <meta
+      property="og:description"
+      content="Образовательный портал о планетах, видео и профессиях"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body data-page="home">
+    <header class="site_header">
+      <div class="container header_inner">
+        <a class="logo" href="index.html" aria-label="Космос для всех"
+          ><span class="logo_mark" aria-hidden="true"></span><span>Космос для всех</span></a
+        >
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav_link" data-page="home" href="index.html">Главная</a
+          ><a class="nav_link" data-page="planets" href="planets.html">Планеты</a
+          ><a class="nav_link" data-page="videos" href="videos.html">Видео</a
+          ><a class="nav_link" data-page="careers" href="careers.html">Профессии</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main_hero">
+        <div class="container main_hero_grid">
+          <div class="main_hero_copy">
+            <h1 class="main_title">Космос понятен каждому</h1>
+            <p class="main_intro text_large">
+              Читайте, смотрите и взаимодействуйте с материалами о космосе без сложных терминов
+            </p>
+            <a class="button button_light" href="planets.html">Исследовать космос</a>
+          </div>
+          <div class="scene_panel">
+            <canvas
+              id="home_canvas"
+              aria-label="Интерактивная 3D-сцена с восемью планетами Солнечной системы"
+            ></canvas>
+          </div>
+        </div>
+      </section>
+      <section class="content_section">
+        <div class="container">
+          <h2 class="section_title">Космос — разными способами</h2>
+          <p class="section_intro text_large">
+            Читайте, смотрите и взаимодействуйте, выбирая удобный формат
+          </p>
+          <div class="story_grid">
+            <article class="story_card">
+              <h3>Почему планеты не падают?</h3>
+              <p>Орбиты и гравитация без сложных формул</p>
+              <a class="button" href="planets.html">Подробнее</a>
+            </article>
+            <article class="story_card">
+              <h3>Что можно увидеть с орбиты</h3>
+              <p>Короткие видео о планетах и космических миссиях</p>
+              <a class="button" href="videos.html">Подробнее</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="content_section">
+        <div class="container">
+          <h2 class="section_title">Куда отправимся дальше?</h2>
+          <div class="route_grid">
+            <a class="route_card" href="videos.html"
+              ><h3>Видео о космосе</h3>
+              <p>Наблюдения, миссии и движение планет</p>
+              <span class="button">Подробнее</span></a
+            ><a class="route_card" href="careers.html"
+              ><h3>Кто работает с космосом</h3>
+              <p>От инженера до специалиста по данным</p>
+              <span class="button">Подробнее</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site_footer">
+      <div class="container footer_inner">
+        <div class="footer_left">
+          <strong>Космос для всех</strong><span>Наука без барьеров</span>
+        </div>
+        <div class="footer_links">
+          <a href="planets.html">Планеты</a><a href="videos.html">Видео</a
+          ><a href="careers.html">Профессии</a>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/common.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="assets/js/home.js"></script>
+  </body>
+</html>

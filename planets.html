@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Планеты — Космос для всех</title>
+    <meta name="description" content="Интерактивные 3D-модели восьми планет Солнечной системы" />
+    <meta name="theme-color" content="#06080b" />
+    <meta property="og:title" content="Планеты — Космос для всех" />
+    <meta
+      property="og:description"
+      content="Интерактивные 3D-модели восьми планет Солнечной системы"
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body data-page="planets">
+    <header class="site_header">
+      <div class="container header_inner">
+        <a class="logo" href="index.html" aria-label="Космос для всех"
+          ><span class="logo_mark" aria-hidden="true"></span><span>Космос для всех</span></a
+        >
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav_link" data-page="home" href="index.html">Главная</a
+          ><a class="nav_link" data-page="planets" href="planets.html">Планеты</a
+          ><a class="nav_link" data-page="videos" href="videos.html">Видео</a
+          ><a class="nav_link" data-page="careers" href="careers.html">Профессии</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="planets_page">
+        <div class="container">
+          <div class="planet_switcher">
+            <button
+              class="planet_arrow"
+              id="planet_prev"
+              type="button"
+              aria-label="Предыдущая планета"
+            >
+              ←
+            </button>
+            <div class="planet_tabs" aria-label="Выбор планеты">
+              <button class="planet_tab active" type="button">Меркурий</button
+              ><button class="planet_tab" type="button">Венера</button
+              ><button class="planet_tab" type="button">Земля</button
+              ><button class="planet_tab" type="button">Марс</button
+              ><button class="planet_tab" type="button">Юпитер</button
+              ><button class="planet_tab" type="button">Сатурн</button
+              ><button class="planet_tab" type="button">Уран</button
+              ><button class="planet_tab" type="button">Нептун</button>
+            </div>
+            <button
+              class="planet_arrow"
+              id="planet_next"
+              type="button"
+              aria-label="Следующая планета"
+            >
+              →
+            </button>
+          </div>
+          <div class="planet_hero">
+            <div class="planet_copy">
+              <h1 class="planet_title" id="planet_name">Меркурий</h1>
+              <p class="planet_description text_large" id="planet_description">
+                Ближайшая к Солнцу каменная планета с резкими перепадами температуры
+              </p>
+            </div>
+            <div class="planet_viewer">
+              <canvas id="planet_canvas" aria-label="Интерактивная 3D-модель планеты"></canvas>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content_section facts_section">
+        <div class="container">
+          <h2 class="section_title" id="facts_title">Меркурий в цифрах</h2>
+          <div class="facts_grid" id="planet_facts"></div>
+        </div>
+      </section>
+      <section class="content_section article_section">
+        <div class="container">
+          <article class="article_card">
+            <h2 id="article_title">Почему на Меркурии так много кратеров?</h2>
+            <p id="article_text">
+              У Меркурия почти нет атмосферы, поэтому метеориты легко достигают поверхности и
+              оставляют кратеры
+            </p>
+            <div class="simple_note" id="article_note">
+              Простыми словами: поверхность почти ничто не защищает от ударов космических камней
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site_footer">
+      <div class="container footer_inner">
+        <div class="footer_left">
+          <strong>Космос для всех</strong><span>Наука без барьеров</span>
+        </div>
+        <div class="footer_links">
+          <a href="planets.html">Планеты</a><a href="videos.html">Видео</a
+          ><a href="careers.html">Профессии</a>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/planets_ui.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="assets/js/planets.js"></script>
+  </body>
+</html>

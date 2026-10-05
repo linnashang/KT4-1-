@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Видео — Космос для всех</title>
+    <meta name="description" content="Видео о Солнечной системе, Земле и Марсе" />
+    <meta name="theme-color" content="#06080b" />
+    <meta property="og:title" content="Видео — Космос для всех" />
+    <meta property="og:description" content="Видео о Солнечной системе, Земле и Марсе" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body data-page="videos">
+    <header class="site_header">
+      <div class="container header_inner">
+        <a class="logo" href="index.html" aria-label="Космос для всех"
+          ><span class="logo_mark" aria-hidden="true"></span><span>Космос для всех</span></a
+        >
+        <nav class="nav" aria-label="Основная навигация">
+          <a class="nav_link" data-page="home" href="index.html">Главная</a
+          ><a class="nav_link" data-page="planets" href="planets.html">Планеты</a
+          ><a class="nav_link" data-page="videos" href="videos.html">Видео</a
+          ><a class="nav_link" data-page="careers" href="careers.html">Профессии</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="page_hero">
+        <div class="container">
+          <h1 class="page_title">Космос в движении</h1>
+          <p class="text_large">Выберите материал и продолжите исследование</p>
+        </div>
+      </section>
+      <section>
+        <div class="container video_layout">
+          <article class="video_main">
+            <video class="video_frame" id="video_player" controls playsinline preload="metadata">
+              <source id="video_source_webm" type="video/webm" />
+              <source id="video_source_mp4" type="video/mp4" />
+              Ваш браузер не поддерживает видео
+            </video>
+            <div class="video_meta">
+              <h2 id="video_title">Солнечная система</h2>
+              <p id="video_text">Все восемь планет и их место в Солнечной системе</p>
+            </div>
+          </article>
+          <aside class="video_list" aria-label="Другие видео">
+            <button class="video_item active" type="button">
+              <strong>Солнечная система</strong><span>Все восемь планет</span></button
+            ><button class="video_item" type="button">
+              <strong>Земля с орбиты</strong><span>Наша планета из космоса</span></button
+            ><button class="video_item" type="button">
+              <strong>Посадка на Марс</strong><span>Миссия Perseverance</span>
+            </button>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <footer class="site_footer">
+      <div class="container footer_inner">
+        <div class="footer_left">
+          <strong>Космос для всех</strong><span>Наука без барьеров</span>
+        </div>
+        <div class="footer_links">
+          <a href="planets.html">Планеты</a><a href="videos.html">Видео</a
+          ><a href="careers.html">Профессии</a>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/videos.js"></script>
+  </body>
+</html>
